@@ -8,8 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-sass:
-  style: compressed
 defaults:
 - scope:
     path: ''
@@ -22,5 +20,7 @@ defaults:
     type: pages
   values:
     layout: page
+sass:
+  style: compressed
 permalink: pretty
-repository: joshuaadrian/joshuaadrian 
+repository: joshuaadrian/joshuaadrian
