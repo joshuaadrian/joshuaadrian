@@ -30,6 +30,33 @@
 
 }
 
+#circles {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	max-width:680px;
+}
+
+@for $i from 1 through 3 {
+  $direction: left;
+  $speed: really-fast;
+  $color:$i * 0.1;
+  #circle#{$i} {
+  	opacity:$color;
+  	fill:#397773;
+    @if $i % 2 == 1 {
+      $direction: right;
+      $speed: really-fast;
+    } @else {
+      $direction: left;
+      $speed: slow;
+    }
+    @include rotate(rabbit, $direction, $speed, 278px, 278px);
+  }
+}
+
 #Layer_1 {
 	display:none;
 }
