@@ -4,35 +4,20 @@ layout: default
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/stylesheet.css">
-  </head>
+
+  {% include head.html %}
+
   <body>
-<!--     <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav> -->
-    <header>
-    	<h1>{{ page.title }}</h1>
-    </header>
+
+    {% include header.html %}
     
     <section>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-12">
-    				{{ content }}
-    			</div>
-    		</div>
-    	</div>
+    	{{ content }}
     </section>
 
-    <footer>
-      &copy; to me
-    </footer>
+    {% include footer.html %}
 
-    <script src="/assets/scripts.js"></script>
+    {% include scripts.html %}
     
   </body>
 </html>
