@@ -1,6 +1,11 @@
 .blurb {
-	padding:0 0 0 260px;
-	background:url('images/browser.svg') left center / 200px auto no-repeat transparent;
+	padding:260px 0 0;
+	background:url('images/browser.svg') center top / 200px auto no-repeat transparent;
+
+	@media only screen and (min-width: $breakpoint-med) {
+		background-position:left center;
+		padding:0 0 0 260px;
+	}
 }
 
 .blurb-wrapper {

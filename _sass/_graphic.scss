@@ -1,15 +1,35 @@
 .graphic-wrapper {
 
-	height:100vh;
+	height:600px;
 	min-height:600px;
 	position:relative;
 	z-index:2;
 	background: -webkit-radial-gradient(center, ellipse cover, #D4FFEA 0%,#7FFFC4 100%);
 	overflow:hidden;
 
+	@media only screen and (min-width: $breakpoint-small) {
+		height:800px;
+		min-height:800px;
+	}
+
+	@media only screen and (min-width: $breakpoint-med) {
+		height:100vh;
+		min-height:600px;
+	}
+
 	.col-12 {
 		margin:0;
-		height:100vh;
+		height:600px;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			height:800px;
+			min-height:800px;
+		}
+
+		@media only screen and (min-width: $breakpoint-med) {
+			height:100vh;
+		}
+
 	}
 
 }
@@ -17,15 +37,28 @@
 .graphic {
 
 	margin:0;
-	height:100vh;
+	height:600px;
+
+	@media only screen and (min-width: $breakpoint-small) {
+		height:800px;
+	}
+
+	@media only screen and (min-width: $breakpoint-med) {
+		height:100vh;
+	}
 
 	svg {
 		position:absolute;
-		top:50%;
+		top:55%;
 		left:50%;
 		transform:translate(-50%,-50%);
 		z-index:3;
-		max-width:680px;
+		max-width:420px;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			max-width:680px;
+			top:50%;
+		}
 	}
 
 }
@@ -39,7 +72,7 @@
 	max-width:680px;
 }
 
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
   $direction: left;
   $speed: really-fast;
   $color:$i * 0.1;
@@ -47,13 +80,13 @@
   	opacity:$color;
   	fill:#397773;
     @if $i % 2 == 1 {
-      $direction: right;
-      $speed: really-fast;
+		$direction: left;
+		$speed: really-fast;
     } @else {
-      $direction: left;
-      $speed: slow;
+    	$direction: right;
+		$speed: slow;
     }
-    @include rotate(rabbit, $direction, $speed, 278px, 278px);
+    @include rotate(rabbit, $direction, $speed, 430px, 430px);
   }
 }
 

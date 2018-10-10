@@ -1,8 +1,13 @@
 
 
 .contact {
-	padding:0 260px 0 0;
-	background:url('images/contact.svg') right center / 200px auto no-repeat transparent;
+	padding:260px 0 0;
+	background:url('images/contact.svg') center top / 200px auto no-repeat transparent;
+
+	@media only screen and (min-width: $breakpoint-med) {
+		background-position:right center;
+		padding:0 260px 0 0;
+	}
 }
 
 .contact-wrapper {
