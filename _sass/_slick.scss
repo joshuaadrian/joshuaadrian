@@ -166,21 +166,26 @@ $slick-opacity-not-active: 0.25 !default;
     position: absolute;
     display: block;
     height: 40px;
-    width: 40px;
+    width: 48%;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: rgba(255,255,255,0.25);
     color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    top: 100%;
     padding: 0;
     border: none;
     outline: none;
     z-index:10;
-    margin-top:30px;
+    margin-top:10px;
+    
+    @media only screen and (min-width: $breakpoint-small) {
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-top:30px;
+        width: 40px;
+    }
+
     &:hover, &:focus {
         outline: none;
         background: rgba(255,255,255,0.5);
@@ -206,8 +211,14 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -40px;
-    border-radius:6px 0 0 6px;
+    left: 0px;
+    border-radius:6px;
+
+    @media only screen and (min-width: $breakpoint-small) {
+        left: -40px;
+        border-radius:6px 0 0 6px;
+    }
+
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -218,8 +229,14 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -40px;
-    border-radius:0 6px 6px 0;
+    right: 0px;
+    border-radius:6px;
+
+    @media only screen and (min-width: $breakpoint-small) {
+        border-radius:0 6px 6px 0;
+        right: -40px;
+    }
+
     [dir="rtl"] & {
         left: -25px;
         right: auto;
