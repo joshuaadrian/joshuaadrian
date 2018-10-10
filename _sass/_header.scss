@@ -18,10 +18,14 @@ header {
 	}
 
 	nav {
-		display:block;
+		display:none;
 		text-align:right;
 		height:60px;
 		overflow:hidden;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			display:block;
+		}
 
 		.svg-wrapper {
 			position: relative;
