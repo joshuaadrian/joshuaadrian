@@ -52,6 +52,54 @@
   }   
 }
 
+@keyframes bounce{
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  5% {
+    transform: translateY(0) scaleY(0.7); 
+  }
+  25% {
+    transform: translateY(-200%) scaleY(1.1); 
+  }
+  35% {
+    transform: translateY(0) scaleY(1); 
+  }
+  40% {
+    transform: translateY(0) scaleY(0.8); 
+  }
+  50% {
+    transform: translateY(-150%) scaleY(1.05);  
+  }
+  60% {
+    transform: translateY(0) scaleY(0.85);  
+  }
+  65% {
+    transform: translateY(-125%) scaleY(1); 
+  }
+  75% {
+    transform: translateY(0) scaleY(0.9); 
+  }
+  80% {
+    transform: translateY(-75%) scaleY(1);  
+  }
+  85% {
+    transform: translateY(0) scaleY(0.98);  
+  }
+  90% {
+    transform: translateY(-50%) scaleY(1);  
+  }
+  95% {
+    transform: translateY(0) scaleY(0.99);  
+  }
+  97% {
+    transform: translateY(-25%) scaleY(1);  
+  }
+  100% {
+    transform: translateY(0) scaleY(1); 
+  }
+}
+
 @function getSpeed($speed, $type:turtle) {
   $secs: 360;
   $divider: 1;
@@ -100,6 +148,13 @@
   @include _rotate-animation($direction, $speed, $type);
 }
 
+@mixin blink() {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: $x $y;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: bounce slow linear 0s infinite;
+}
+
 #airplane2, #airplane1 {
   @include rotate(turtle, right, fastest);
 }
@@ -110,6 +165,10 @@
 
 #floatingGlobe {
   @include rotate(turtle, left, normal);
+}
+
+#left_eye {
+  @include blink();
 }
 
 #globe {
