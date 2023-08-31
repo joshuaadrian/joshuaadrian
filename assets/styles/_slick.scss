@@ -199,7 +199,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         content:'';
-        background:url('images/angle-right-regular.svg') center center / 12px auto no-repeat transparent;
+        background:url('../images/angle-right-regular.svg') center center / 12px auto no-repeat transparent;
         opacity: $slick-opacity-default;
         position: absolute;
         top:0;
@@ -224,7 +224,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: -25px;
     }
     &:before {
-        background-image:url('images/angle-left-regular.svg');
+        background-image:url('../images/angle-left-regular.svg');
     }
 }
 
