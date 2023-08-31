@@ -1,0 +1,84 @@
+form {
+
+  label {
+    color:$pink-400;
+    display: block;
+    font-family: $font-family-headings;
+    font-size:24px;
+    margin:0 0 20px;
+
+    @media(min-width:$screen-lg-min) {
+      font-size:32px;
+    }
+  }
+
+  input, select {
+    display: block;
+    width:100%;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    border:3px solid $pink-400;
+    outline:none;
+    background:$white;
+    color:#222;
+    padding:8px;
+    font-size:18px;
+    border-radius: 6px;
+    font-family: $font-family-sans-serif;
+
+    @media(min-width:$screen-lg-min) {
+      padding:12px;
+      font-size:20px;
+    }
+  }
+
+  select {
+
+    border: none;
+    border-radius: 0 !important;
+    background: none;
+    appearance: none;
+    position:relative;
+    z-index: 2;
+    outline:none;
+
+    &:focus {
+
+    }
+
+    &:after {
+      content:'';
+      position: absolute;
+      right:5px;
+      top:50%;
+      width: 0;
+      height: 0;
+      z-index: 1;
+      border-style: solid;
+      border-width: 6px 4px 0 4px;
+      margin-top:-3px;
+      border-color: #111111 transparent transparent transparent;
+    }
+
+  }
+
+  textarea {
+    width:100%;
+    background:$white;
+    outline: none;
+    color:#222;
+    padding:12px;
+    font-size:20px;
+    border-radius: 6px;
+    border:3px solid $pink-400;
+    font-family: $font-family-sans-serif;
+  }
+
+  button {
+
+  }
+
+}

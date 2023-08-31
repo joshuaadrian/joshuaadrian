@@ -1,0 +1,57 @@
+.too--footer {
+
+	display: flex;
+	flex-flow:row nowrap;
+	padding-top:60px;
+	padding-bottom:60px;
+	font-size: 14px;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	@media(max-width:$screen-md-max) {
+		text-align: center;
+	}
+
+	p {
+
+		+ p {
+			margin-top:-10px;
+		}
+
+		strong	{
+			font-size:18px;
+		}
+
+	}
+
+	&--tree {
+		width:160px;
+		height:auto;
+		margin:15px 0;
+
+		@media(min-width:$screen-md-min) {
+			margin:-90px 0 15px;
+		}
+
+	}
+
+	.columns {
+
+		@media(min-width:$screen-md-min) {
+			align-items: flex-end;
+		}
+
+	}
+
+	.column {
+
+		&:nth-child(2n) {
+
+			@media(min-width:$screen-md-min) {
+				text-align: right;
+			}
+
+		}
+	}
+
+}
