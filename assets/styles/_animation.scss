@@ -1,54 +1,54 @@
-@-webkit-keyframes rotate-right {
+@keyframes rotate-right {
   from { 
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes rotate-left {
+@keyframes rotate-left {
   from { 
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
-@-webkit-keyframes hover {
+@keyframes hover {
   0% {
-    -webkit-transform: translateY(0%);  
+    transform: translateY(0%);  
   }
   50% {
-    -webkit-transform: translateY(5%);  
+    transform: translateY(5%);  
   } 
   100% {
-    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }     
 }
 
-@-webkit-keyframes pull {
+@keyframes pull {
   0% {
-    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
   }
   40% {
-    -webkit-transform: scaleY(1.01);
+    transform: scaleY(1.01);
   }
   60% {
-    -webkit-transform: scaleY(0.99);
+    transform: scaleY(0.99);
   }
   80% {
-    -webkit-transform: scaleY(1.01);
+    transform: scaleY(1.01);
   }
   100% {
-    -webkit-transform: scaleY(0.99);
+    transform: scaleY(0.99);
   }       
   80% {
-    -webkit-transform: scaleY(1.01);
+    transform: scaleY(1.01);
   }
   100% {
-    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
   }   
 }
 
@@ -127,32 +127,32 @@
 }
 
 @mixin _rotate-animation($direction, $speed, $type) {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation: rotate-#{$direction} getSpeed($speed, $type) linear 0s infinite;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-#{$direction} getSpeed($speed, $type) linear 0s infinite;
 }
 
 @mixin _hover-animation($duration, $delay) {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation: hover #{$duration}s linear #{$delay}s infinite; 
+  transform: translate3d(0, 0, 0);
+  animation: hover #{$duration}s linear #{$delay}s infinite; 
 }
 
 @mixin _pull-animation($duration, $delay, $x: 200px, $y: 200px) {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: $x $y;
-  -webkit-animation: pull #{$duration}s linear #{$delay}s infinite alternate; 
+  transform: translate3d(0, 0, 0);
+  transform-origin: $x $y;
+  animation: pull #{$duration}s linear #{$delay}s infinite alternate; 
 }
 
 @mixin rotate($type, $direction: left, $speed: slow, $x: 200px, $y: 200px) {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: $x $y;
+  transform: translate3d(0, 0, 0);
+  transform-origin: $x $y;
   @include _rotate-animation($direction, $speed, $type);
 }
 
 @mixin blink() {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: 0px 0px;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation: bounce slow linear 0s infinite;
+  transform: translate3d(0, 0, 0);
+  transform-origin: 0px 0px;
+  transform: translate3d(0, 0, 0);
+  animation: bounce slow linear 0s infinite;
 }
 
 #airplane2, #airplane1 {

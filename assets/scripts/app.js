@@ -10,5 +10,7 @@ jQuery(document).ready(function($) {
 
   // Components
   require('./components/swiper');
+  //require('./examples/nav-one');
+  require('./examples/svg-animation');
 
 });
