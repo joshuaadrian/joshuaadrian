@@ -476,15 +476,5 @@ body {
   background: url(../images/examples/full-width/background-waves.jpg) center/cover no-repeat transparent;
 }
 #full-width section#section-four .column:last-child {
-  padding: 60px;
-}
-#full-width section#section-four .column:last-child:before {
-  content: "";
-  height: 100%;
-  width: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background: #d8d8d8;
+  padding: 60px 0 60px 60px;
 }
