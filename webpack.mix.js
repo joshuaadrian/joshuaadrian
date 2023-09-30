@@ -9,11 +9,11 @@ const themename = 'joshuaadrian';
 const domain    = 'joshuaadrian.test';
 const homedir   = require('os').homedir();
 
-mix.setPublicPath('dist');
-mix.setResourceRoot(`/wp-content/themes/${themename}/dist/`);
+// mix.setPublicPath('dist');
+// mix.setResourceRoot(`/wp-content/themes/${themename}/dist/`);
 
-mix.setResourceRoot('../');
-mix.setPublicPath(path.resolve('./'));
+// mix.setResourceRoot('../');
+// mix.setPublicPath(path.resolve('./'));
 
 mix.webpackConfig({
   plugins: [
@@ -61,9 +61,7 @@ mix.autoload({
   ],
   notify: false
 })
-.copyDirectory('assets/images/', 'dist/images')
-.copyDirectory('assets/fonts/', 'dist/fonts')
-// .copy('assets/scripts/flickity.js', 'dist/scripts/flickity.js')
+.copyDirectory('assets/images', 'dist/images')
 .sourceMaps()
 .options({
   processCssUrls : false,
