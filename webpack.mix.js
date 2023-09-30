@@ -5,15 +5,11 @@ let webpack              = require('webpack');
 let path                 = require('path');
 let productionSourceMaps = false;
 
-const themename = 'joshuaadrian';
+const homedir = require('os').homedir();
 const domain    = 'joshuaadrian.test';
-const homedir   = require('os').homedir();
 
-// mix.setPublicPath('dist');
-// mix.setResourceRoot(`/wp-content/themes/${themename}/dist/`);
-
-// mix.setResourceRoot('../');
-// mix.setPublicPath(path.resolve('./'));
+mix.setPublicPath('dist');
+mix.setResourceRoot('/');
 
 mix.webpackConfig({
   plugins: [
@@ -36,6 +32,7 @@ mix.webpackConfig({
   },
 });
 
+
 mix.autoload({
    jquery : ['$', 'window.$', 'window.jQuery']
 })
@@ -55,7 +52,7 @@ mix.autoload({
     cert: homedir + '/.config/valet/Certificates/' + domain + '.crt',
   },
   files : [
-    '**/*.php',
+    '**/*.html',
     'dist/**/*.css',
     'dist/**/*.js'
   ],
