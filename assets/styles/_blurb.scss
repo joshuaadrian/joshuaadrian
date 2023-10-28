@@ -56,7 +56,7 @@
 
 		text-align:center;
 		position:absolute;
-		bottom:100%;
+		bottom: calc(100% + 15px);
 		left:50%;
 		width:240px;
 		margin-left:-120px;
