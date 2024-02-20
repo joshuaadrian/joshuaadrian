@@ -1,16 +1,14 @@
-// Vendor Libraries
+import { scroller } from './components/scroller';
+import { lazyload } from './components/lazyload';
+import { photos } from './components/photos';
 
-try {
-  window.$ = window.jQuery = require('jquery');
-} catch (e) {
-  console.log(e);
-}
+global.$ = global.jQuery;
 
-jQuery(document).ready(function($) {
+$(() => {
+  scroller();
+  photos();
+  lazyload();
 
-  // Components
-  require('./components/swiper');
-  //require('./examples/nav-one');
-  require('./examples/svg-animation');
+  $('body').addClass('is-loaded');
 
 });

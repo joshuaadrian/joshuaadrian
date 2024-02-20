@@ -1,0 +1,104 @@
+
+/* Most of these styles could be removed but are for the demo to look better */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#masthead {
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+}
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+.contact {
+
+
+
+  p {
+      align-content: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+  }
+
+  a {
+    color:#fff;
+    font-size: 24px;
+    //text-transform: uppercase;
+    font-weight: 600;
+
+    @media only screen and (min-width: $screen-md-min) {
+      font-size: 70px;
+    }
+  }
+}
+
+// #panels #panels--wrap .panel img {
+//   max-width: 100%;
+//   height: auto;
+//   display: block;
+// }
+// #panels #panels--wrap .panel .panels-navigation {
+//   width: 100%;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-pack: end;
+//   -ms-flex-pack: end;
+//   justify-content: flex-end;
+// }
+// #panels #panels--wrap .panel .anchor-panel,
+// #panels #panels--wrap .panel .nav-panel {
+//   color: #000;
+//   text-transform: uppercase;
+//   margin-right: 2rem;
+// }
+// #panels #panels--wrap .panels-navigation {
+//   position: absolute;
+//   width: 100%;
+//   bottom: 2rem;
+//   right: 2rem;
+// }
+// .cards-wrapper{
+//   display:flex;
+// }
+// .card{
+//   width:600px;
+// }
+
+// #panel-5 {
+//   width: unset;
+//   flex: 1 0 auto
+// }
