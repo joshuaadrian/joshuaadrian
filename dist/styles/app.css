@@ -1,4 +1,634 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)){all:unset;display:revert}*,:after,:before{box-sizing:border-box}a,button{cursor:revert}menu,ol,ul{list-style:none}img{max-width:100%}table{border-collapse:collapse}input,textarea{-webkit-user-select:auto}textarea{white-space:revert}meter{-webkit-appearance:revert;-moz-appearance:revert;appearance:revert}::-moz-placeholder{color:unset}::placeholder{color:unset}:where([hidden]){display:none}:where([contenteditable]:not([contenteditable=false])){-moz-user-modify:read-write;-webkit-user-modify:read-write;-webkit-line-break:after-white-space;overflow-wrap:break-word;-webkit-user-select:auto}:where([draggable=true]){-webkit-user-drag:element}body,html{font-size:100%;left:0;padding:0;top:0;width:100%}*{box-sizing:border-box;color:#333447;font-family:Lato,Helvetica,sans-serif;line-height:1.5}h1{font-size:2.5rem}h1,h2{font-weight:900}h2{font-size:2rem}h3{font-size:1.375rem}h3,h4{font-weight:900}h4{font-size:1.125rem}h5{font-size:1rem}h5,h6{font-weight:900}h6{font-size:.875rem}p{font-size:1.125rem;font-weight:200;line-height:1.8}.font-light{font-weight:300}.font-regular{font-weight:400}.font-heavy{font-weight:900}.left{text-align:left}.right{text-align:right}strong{font-weight:400}.center{margin-left:auto;margin-right:auto;text-align:center}.justify{text-align:justify}.hidden-sm{display:none}#page{background:linear-gradient(280deg,#22c1c3,#fdbb2d)}.is-loaded .panel--grid__item{opacity:1;transition:all 1s ease-in-out;visibility:visible}@media only screen and (min-width:768px){#panels--container,#panels--wrap{display:flex;flex-wrap:nowrap;height:100vh;overflow:hidden;padding:0}}.panel{align-items:center;display:flex;font-size:1.5em;font-weight:600;justify-content:center;padding:1rem;text-align:center}@media only screen and (min-width:768px){.panel{height:100vh;min-width:100vw;overflow:hidden}}@media only screen and (max-width:767px){.panel:not(:first-child){margin-top:-1rem;padding:0 1rem 1rem}}@media only screen and (min-width:768px){.panel:nth-child(2n) .panel--grid__item:nth-child(4){flex-basis:33.333%}.panel:nth-child(2n) .panel--grid__item:first-child{flex-basis:66.666%}}.panel--grid{align-content:center;display:flex;flex-flow:row wrap;height:100%;justify-content:center;width:100%}.panel--grid__item{background:linear-gradient(60deg,rgba(34,193,195,0),rgba(253,187,45,0));flex-basis:50%;height:0;opacity:0;padding-top:50%;position:relative;transition:all 1s ease-in-out;visibility:hidden}@media only screen and (min-width:768px){.panel--grid__item{flex-basis:33.333%;height:50%;padding-top:0;position:static}.panel--grid__item:nth-child(4){flex-basis:66.666%}}.panel--grid__item:nth-child(3){flex-basis:100%;padding-top:100%}@media only screen and (min-width:768px){.panel--grid__item:nth-child(3){flex-basis:33.333%;padding-top:0}}.panel--grid__item.has-multiple.is-expanded .panel--grid__item--image{right:400px}.panel--grid__item.is-expanded .panel--grid__item--image{background-color:hsla(0,0%,100%,.75);background-size:contain;bottom:0;height:auto;left:0;position:fixed;right:0;top:0;width:auto;z-index:2}@media only screen and (min-width:768px){.panel--grid__item.is-expanded .panel--grid__item--image{bottom:6rem;bottom:2rem;left:2rem;right:2rem;top:2rem}}.panel--grid__item.is-expanded .panel--grid__item--image:hover{box-shadow:0 0 0 rgba(0,0,0,.5);transform:scale(1)}.panel--grid__item.is-expanded .panel--grid__item--image .panel--grid__item--description{background:rgba(253,187,45,.85);bottom:-4rem;height:4rem;left:0;opacity:1;position:absolute;right:0;transition:all .3s ease-in-out;visibility:visible}.panel--grid__item--image{background-color:hsla(0,0%,100%,0);background-position:50%;background-repeat:no-repeat;background-size:cover;bottom:auto;box-shadow:0 0 0 rgba(34,193,195,0);height:100%;left:auto;position:relative;right:auto;top:auto;transform:scale(1);transform-origin:center;transition:all .3s ease-in-out;width:100%}.panel--grid__item--image:hover{box-shadow:0 0 10px rgba(0,0,0,.35);transform:scale(1.015)}.panel--grid__item--image .panel--grid__item--description{background:rgba(253,187,45,0);font-weight:700;opacity:0;padding:0 2rem;transition:none;visibility:hidden}.panel--grid__item--image .panel--grid__item--description p{font-size:.85rem;font-weight:700;line-height:4rem}.panel--grid__item--image .panel--grid__item--images{bottom:0;position:absolute;right:0;top:0;width:400px}.panel--grid__item--image .panel--grid__item--images div{background-color:hsla(0,0%,100%,.75);background-position:50%;background-repeat:no-repeat;background-size:contain;height:calc(50% - 1rem);position:absolute;right:calc(-400px + 2rem);top:0;width:calc(100% - 4rem)}.panel--grid__item--image .panel--grid__item--images div:nth-child(2){bottom:0;top:auto}.panel--grid__item--inner{align-content:center;border:1rem solid rgba(34,193,195,0);display:flex;flex-flow:row wrap;height:100%;justify-content:center}@media only screen and (max-width:767px){.panel--grid__item--inner{bottom:0;left:0;position:absolute;right:0;top:0}}.panel--grid__item--inner svg{height:auto;width:100%}.panel--grid__item--inner svg polygon{fill:#1eacad}.panel--grid__item--inner svg polygon.logo-a{fill:#eba102}body,html{font-weight:300;height:100%;margin:0}body{overflow-x:hidden}a{color:#fff}h1,h2{text-align:center}.full-screen{display:block;height:100vh;overflow:hidden;width:100%}#intro{display:flex;flex-direction:column;justify-content:center}#masthead{display:flex;position:fixed;z-index:9999}#masthead a{padding:1rem 2rem}.contact p{align-content:center;display:flex;flex-flow:column wrap;height:100%;justify-content:center}.contact a{color:#fff;font-size:24px;font-weight:600}@media only screen and (min-width:768px){.contact a{font-size:70px}}#fatty-care #page{padding:1px 0}#fatty-care #page p{background:hsla(0,0%,100%,.65);border-radius:1rem;display:block;margin:2rem auto;max-width:1100px;padding:1rem 2rem;text-align:center}#fatty-care .header img{display:block;height:auto;left:-30px;margin:0 auto;max-width:300px;position:relative}#fatty-care .schedule{background:hsla(0,0%,100%,.65);border-radius:1rem;margin:0 auto;max-width:1100px}#fatty-care .schedule--wrap{padding:60px 30px}#fatty-care .schedule--header{display:none;flex-flow:row nowrap}@media only screen and (min-width:768px){#fatty-care .schedule--header{display:flex}}#fatty-care .schedule--header__date{flex:1 0 20%}#fatty-care .schedule--header__evening,#fatty-care .schedule--header__morning{flex:1 0 40%}#fatty-care .schedule--header span{display:block;font-size:20px;font-weight:600;padding:1rem}#fatty-care .schedule--row{border-top:1px solid rgba(0,0,0,.35);display:flex;flex-flow:column wrap;padding:.75rem 0}@media only screen and (min-width:768px){#fatty-care .schedule--row{flex-flow:row nowrap;padding:0}}@media only screen and (max-width:767px){#fatty-care .schedule--row:first-child{border-top:none}}#fatty-care .schedule--row__date{flex:1 0 20%;font-size:20px;max-width:20%;width:20%}#fatty-care .schedule--row__date span{text-align:left;white-space:nowrap}@media only screen and (max-width:767px){#fatty-care .schedule--row__date span:before{color:#000;content:"Date:";font-weight:400;margin:0 10px 0 0}}#fatty-care .schedule--row__care{flex:1 0 40%;font-size:20px}@media only screen and (max-width:767px){#fatty-care .schedule--row__care.morning a:before,#fatty-care .schedule--row__care.morning>span:before{color:#000;content:"Morning:";font-weight:400;margin:0 10px 0 0}#fatty-care .schedule--row__care.evening a:before,#fatty-care .schedule--row__care.evening>span:before{color:#000;content:"Evening:";font-weight:400;margin:0 10px 0 0}}#fatty-care .schedule--row a{display:block;padding:.25rem 1rem}@media only screen and (min-width:768px){#fatty-care .schedule--row a{padding:1rem}}#fatty-care .schedule--row a:hover{text-decoration:none}#fatty-care .schedule--row a:hover span:before{width:100%}#fatty-care .schedule--row a:after{background:url(../images/fatty/calendar-days-solid.svg) 50%/100% auto no-repeat transparent;content:"";display:inline-block;height:20px;margin:0 0 0 8px;position:relative;top:2px;width:16px}#fatty-care .schedule--row a span{display:inline-block;position:relative;transition:all .3s ease-in-out}#fatty-care .schedule--row a span:before{background:linear-gradient(280deg,#22c1c3,#fdbb2d);content:"";height:2px;left:0;position:absolute;top:100%;transition:all .2s ease-in-out;width:0}#fatty-care .schedule--row div>span{display:block;padding:.25rem 1rem}@media only screen and (min-width:768px){#fatty-care .schedule--row div>span{padding:1rem}}
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
 
-/*# sourceMappingURL=app.css.map*/
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+* {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 900;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+strong {
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+#page {
+  background: linear-gradient(280deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+
+.is-loaded .panel--grid__item {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  #panels--container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #panels--wrap {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+.panel {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .panel {
+    min-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .panel:not(:first-child) {
+    padding: 0 1rem 1rem;
+    margin-top: -1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .panel:nth-child(even) .panel--grid__item:nth-child(4) {
+    flex-basis: 33.333%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .panel:nth-child(even) .panel--grid__item:nth-child(1) {
+    flex-basis: 66.666%;
+  }
+}
+.panel--grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.panel--grid__item {
+  flex-basis: 50%;
+  background: linear-gradient(60deg, rgba(34, 193, 195, 0) 0%, rgba(253, 187, 45, 0) 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  padding-top: 50%;
+  height: 0;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .panel--grid__item {
+    flex-basis: 33.333%;
+    padding-top: 0;
+    height: 50%;
+    position: static;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .panel--grid__item:nth-child(4) {
+    flex-basis: 66.666%;
+  }
+}
+.panel--grid__item:nth-child(3) {
+  flex-basis: 100%;
+  padding-top: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .panel--grid__item:nth-child(3) {
+    flex-basis: 33.333%;
+    padding-top: 0;
+  }
+}
+.panel--grid__item.has-multiple.is-expanded .panel--grid__item--image {
+  right: 400px;
+}
+.panel--grid__item.is-expanded .panel--grid__item--image {
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  background-size: contain;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 2;
+  height: auto;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  .panel--grid__item.is-expanded .panel--grid__item--image {
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    bottom: 6rem;
+    bottom: 2rem;
+  }
+}
+.panel--grid__item.is-expanded .panel--grid__item--image:hover {
+  transform: scale(1);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+.panel--grid__item.is-expanded .panel--grid__item--image .panel--grid__item--description {
+  background: rgba(253, 187, 45, 0.85);
+  position: absolute;
+  bottom: -4rem;
+  height: 4rem;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+.panel--grid__item--image {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0);
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  transform: scale(1);
+  transform-origin: center;
+  box-shadow: 0 0 0px rgba(34, 193, 195, 0);
+}
+.panel--grid__item--image:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+.panel--grid__item--image .panel--grid__item--description {
+  transition: none;
+  opacity: 0;
+  visibility: hidden;
+  font-weight: 700;
+  padding: 0rem 2rem;
+  background: rgba(253, 187, 45, 0);
+}
+.panel--grid__item--image .panel--grid__item--description p {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 4rem;
+}
+.panel--grid__item--image .panel--grid__item--images {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+}
+.panel--grid__item--image .panel--grid__item--images div {
+  width: calc(100% - 4rem);
+  top: 0;
+  right: calc(-400px + 2rem);
+  height: calc(50% - 1rem);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel--grid__item--image .panel--grid__item--images div:nth-child(2) {
+  top: auto;
+  bottom: 0;
+}
+.panel--grid__item--inner {
+  border: 1rem solid rgba(34, 193, 195, 0);
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .panel--grid__item--inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.panel--grid__item--inner svg {
+  height: auto;
+  width: 100%;
+}
+.panel--grid__item--inner svg polygon {
+  fill: #1eacad;
+}
+.panel--grid__item--inner svg polygon.logo-a {
+  fill: #eba102;
+}
+
+/* Most of these styles could be removed but are for the demo to look better */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#masthead {
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+}
+
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+.contact p {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+}
+.contact a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .contact a {
+    font-size: 70px;
+  }
+}
+
+#fatty-care .image {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.65);
+  margin: 2rem auto;
+  display: block;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+#fatty-care #page {
+  padding: 1px 0;
+}
+#fatty-care #page p {
+  margin: 2rem auto;
+  display: block;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  max-width: 1100px;
+}
+#fatty-care .header img {
+  margin: 0 auto;
+  position: relative;
+  left: -30px;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+#fatty-care .schedule {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+#fatty-care .schedule--wrap {
+  padding: 60px 30px;
+}
+#fatty-care .schedule--header {
+  display: none;
+  flex-flow: row nowrap;
+}
+@media only screen and (min-width: 768px) {
+  #fatty-care .schedule--header {
+    display: flex;
+  }
+}
+#fatty-care .schedule--header__date {
+  flex: 1 0 20%;
+}
+#fatty-care .schedule--header__morning {
+  flex: 1 0 40%;
+}
+#fatty-care .schedule--header__evening {
+  flex: 1 0 40%;
+}
+#fatty-care .schedule--header span {
+  font-size: 20px;
+  padding: 1rem;
+  display: block;
+  font-weight: 600;
+}
+#fatty-care .schedule--row {
+  display: flex;
+  flex-flow: column wrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  padding: 0.75rem 0;
+}
+@media only screen and (min-width: 768px) {
+  #fatty-care .schedule--row {
+    flex-flow: row nowrap;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #fatty-care .schedule--row:first-child {
+    border-top: none;
+  }
+}
+#fatty-care .schedule--row__date {
+  flex: 1 0 20%;
+  width: 20%;
+  max-width: 20%;
+  font-size: 20px;
+}
+#fatty-care .schedule--row__date span {
+  text-align: left;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  #fatty-care .schedule--row__date span:before {
+    content: "Date:";
+    margin: 0 10px 0 0;
+    color: #000000;
+    font-weight: 400;
+  }
+}
+#fatty-care .schedule--row__care {
+  flex: 1 0 40%;
+  font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+  #fatty-care .schedule--row__care.morning a:before, #fatty-care .schedule--row__care.morning > span:before {
+    content: "Morning:";
+    margin: 0 10px 0 0;
+    color: #000000;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #fatty-care .schedule--row__care.evening a:before, #fatty-care .schedule--row__care.evening > span:before {
+    content: "Evening:";
+    margin: 0 10px 0 0;
+    color: #000000;
+    font-weight: 400;
+  }
+}
+#fatty-care .schedule--row a {
+  padding: 0.25rem 1rem;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #fatty-care .schedule--row a {
+    padding: 1rem;
+  }
+}
+#fatty-care .schedule--row a:hover {
+  text-decoration: none;
+}
+#fatty-care .schedule--row a:hover span:before {
+  width: 100%;
+}
+#fatty-care .schedule--row a:after {
+  content: "";
+  margin: 0 0 0 8px;
+  background: url(../images/fatty/calendar-days-solid.svg) center center/100% auto no-repeat transparent;
+  height: 20px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  display: inline-block;
+}
+#fatty-care .schedule--row a span {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+#fatty-care .schedule--row a span:before {
+  content: "";
+  transition: all 0.2s ease-in-out;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  width: 0;
+  position: absolute;
+  background: linear-gradient(280deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+#fatty-care .schedule--row div > span {
+  padding: 0.25rem 1rem;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #fatty-care .schedule--row div > span {
+    padding: 1rem;
+  }
+}
